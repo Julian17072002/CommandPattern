@@ -8,10 +8,13 @@ public class Main {
 		ARDPlus ardplus = new ARDPlus();
 
 		Kinder kinder = new Kinder();
+
+
 		kinder.setStreamBefehl(new NetflixBefehl(netflix));
-
-		kinder.streamAusloesen("Family Guy");
-
+		
+		kinder.streamAusloesen("Family Guy");;
+		
+		System.out.println("\nUhrzeit: 20:00 Uhr nur noch Tatort");
 		kinder.setStreamBefehl(new ARDPlusBefehl(ardplus));
 
 		kinder.streamAusloesen("Tatort");
